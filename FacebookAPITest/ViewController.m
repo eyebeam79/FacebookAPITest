@@ -20,7 +20,7 @@
 @property (strong, nonatomic) IBOutlet UILabel *linkLabel;
 @property (strong, nonatomic) IBOutlet UILabel *updateLabel;
 
-@property (weak, nonatomic) ACAccount *facebookAccount;
+@property (strong, nonatomic) ACAccount *facebookAccount;
 
 @end
 
@@ -28,6 +28,8 @@
 
 - (void)viewWillAppear:(BOOL)animated
 {
+    [super viewWillAppear:animated];
+    
     [self showMyProfile];
 }
 
@@ -40,7 +42,7 @@
     
     // 앱 아이디와 권한 지정
     NSDictionary *options = @{ACFacebookAppIdKey:FACEBOOK_APPID,
-                              ACFacebookPermissionsKey:@[@"user_about_me"],
+                              ACFacebookPermissionsKey:@[@"basic_info"],
                               ACFacebookAudienceKey:ACFacebookAudienceEveryone};
     
     // 계정과 권한에 대한 승인 요청

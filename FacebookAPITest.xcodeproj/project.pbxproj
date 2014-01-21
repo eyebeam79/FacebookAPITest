@@ -21,6 +21,8 @@
 		B319B12B188E32EC005F4D41 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B319B10D188E32EC005F4D41 /* UIKit.framework */; };
 		B319B133188E32EC005F4D41 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B319B131188E32EC005F4D41 /* InfoPlist.strings */; };
 		B319B135188E32EC005F4D41 /* FacebookAPITestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B319B134188E32EC005F4D41 /* FacebookAPITestTests.m */; };
+		B319B141188E4DD2005F4D41 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B319B140188E4DD2005F4D41 /* Social.framework */; };
+		B319B143188E4DDE005F4D41 /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B319B142188E4DDE005F4D41 /* Accounts.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +56,8 @@
 		B319B132188E32EC005F4D41 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		B319B134188E32EC005F4D41 /* FacebookAPITestTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FacebookAPITestTests.m; sourceTree = "<group>"; };
 		B319B13E188E33B8005F4D41 /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FacebookSDK.framework; sourceTree = "<group>"; };
+		B319B140188E4DD2005F4D41 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
+		B319B142188E4DDE005F4D41 /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +65,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B319B143188E4DDE005F4D41 /* Accounts.framework in Frameworks */,
+				B319B141188E4DD2005F4D41 /* Social.framework in Frameworks */,
 				B319B10C188E32EC005F4D41 /* CoreGraphics.framework in Frameworks */,
 				B319B10E188E32EC005F4D41 /* UIKit.framework in Frameworks */,
 				B319B10A188E32EC005F4D41 /* Foundation.framework in Frameworks */,
@@ -102,6 +108,8 @@
 		B319B108188E32EC005F4D41 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				B319B142188E4DDE005F4D41 /* Accounts.framework */,
+				B319B140188E4DD2005F4D41 /* Social.framework */,
 				B319B13E188E33B8005F4D41 /* FacebookSDK.framework */,
 				B319B109188E32EC005F4D41 /* Foundation.framework */,
 				B319B10B188E32EC005F4D41 /* CoreGraphics.framework */,
